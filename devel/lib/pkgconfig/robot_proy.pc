@@ -1,0 +1,8 @@
+prefix=/home/esteban/catkin_ws/devel
+
+Name: robot_proy
+Description: Description of robot_proy
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/esteban/catkin_ws/devel/lib 
+Requires: 

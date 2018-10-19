@@ -1,0 +1,8 @@
+prefix=/home/esteban/catkin_ws/install
+
+Name: Esteban_pkg
+Description: Description of Esteban_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/esteban/catkin_ws/install/lib 
+Requires: 

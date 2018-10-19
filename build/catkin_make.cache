@@ -1,0 +1,2 @@
+beginner_tutorials:esteban_pkg:rplidar_ros-master:super_pkg:two_wheels_description
+-DCATKIN_DEVEL_PREFIX=/home/esteban/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/esteban/catkin_ws/install -G Unix Makefiles
