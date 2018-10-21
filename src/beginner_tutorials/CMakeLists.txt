@@ -214,5 +214,5 @@ target_link_libraries(Perez_listener ${catkin_LIBRARIES})
 add_executable(robot_move src/robot_move.cpp)
 target_link_libraries(robot_move ${catkin_LIBRARIES})
 
-add_executable(vel_reader src/vel_reader.cpp)
-target_link_libraries(vel_reader ${catkin_LIBRARIES})
+add_executable(robot_vel_reader src/robot_vel_reader.cpp)
+target_link_libraries(robot_vel_reader ${catkin_LIBRARIES})

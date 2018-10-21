@@ -271,21 +271,6 @@ beginner_tutorials_genlisp/fast:
 .PHONY : beginner_tutorials_genlisp/fast
 
 # Convenience name for target.
-beginner_tutorials/CMakeFiles/vel_reader.dir/rule:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/vel_reader.dir/rule
-.PHONY : beginner_tutorials/CMakeFiles/vel_reader.dir/rule
-
-# Convenience name for target.
-vel_reader: beginner_tutorials/CMakeFiles/vel_reader.dir/rule
-
-.PHONY : vel_reader
-
-# fast build rule for target.
-vel_reader/fast:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/vel_reader.dir/build.make beginner_tutorials/CMakeFiles/vel_reader.dir/build
-.PHONY : vel_reader/fast
-
-# Convenience name for target.
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/rule:
 	cd /home/esteban/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/rule
 .PHONY : beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/rule
@@ -509,6 +494,21 @@ roscpp_generate_messages_nodejs: beginner_tutorials/CMakeFiles/roscpp_generate_m
 roscpp_generate_messages_nodejs/fast:
 	cd /home/esteban/catkin_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+beginner_tutorials/CMakeFiles/robot_vel_reader.dir/rule:
+	cd /home/esteban/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/robot_vel_reader.dir/rule
+.PHONY : beginner_tutorials/CMakeFiles/robot_vel_reader.dir/rule
+
+# Convenience name for target.
+robot_vel_reader: beginner_tutorials/CMakeFiles/robot_vel_reader.dir/rule
+
+.PHONY : robot_vel_reader
+
+# fast build rule for target.
+robot_vel_reader/fast:
+	cd /home/esteban/catkin_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/robot_vel_reader.dir/build.make beginner_tutorials/CMakeFiles/robot_vel_reader.dir/build
+.PHONY : robot_vel_reader/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
@@ -783,6 +783,33 @@ src/robot_move.cpp.s:
 	cd /home/esteban/catkin_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/robot_move.dir/build.make beginner_tutorials/CMakeFiles/robot_move.dir/src/robot_move.cpp.s
 .PHONY : src/robot_move.cpp.s
 
+src/robot_vel_reader.o: src/robot_vel_reader.cpp.o
+
+.PHONY : src/robot_vel_reader.o
+
+# target to build an object file
+src/robot_vel_reader.cpp.o:
+	cd /home/esteban/catkin_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/robot_vel_reader.dir/build.make beginner_tutorials/CMakeFiles/robot_vel_reader.dir/src/robot_vel_reader.cpp.o
+.PHONY : src/robot_vel_reader.cpp.o
+
+src/robot_vel_reader.i: src/robot_vel_reader.cpp.i
+
+.PHONY : src/robot_vel_reader.i
+
+# target to preprocess a source file
+src/robot_vel_reader.cpp.i:
+	cd /home/esteban/catkin_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/robot_vel_reader.dir/build.make beginner_tutorials/CMakeFiles/robot_vel_reader.dir/src/robot_vel_reader.cpp.i
+.PHONY : src/robot_vel_reader.cpp.i
+
+src/robot_vel_reader.s: src/robot_vel_reader.cpp.s
+
+.PHONY : src/robot_vel_reader.s
+
+# target to generate assembly for a file
+src/robot_vel_reader.cpp.s:
+	cd /home/esteban/catkin_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/robot_vel_reader.dir/build.make beginner_tutorials/CMakeFiles/robot_vel_reader.dir/src/robot_vel_reader.cpp.s
+.PHONY : src/robot_vel_reader.cpp.s
+
 src/talker.o: src/talker.cpp.o
 
 .PHONY : src/talker.o
@@ -810,33 +837,6 @@ src/talker.cpp.s:
 	cd /home/esteban/catkin_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/src/talker.cpp.s
 .PHONY : src/talker.cpp.s
 
-src/vel_reader.o: src/vel_reader.cpp.o
-
-.PHONY : src/vel_reader.o
-
-# target to build an object file
-src/vel_reader.cpp.o:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/vel_reader.dir/build.make beginner_tutorials/CMakeFiles/vel_reader.dir/src/vel_reader.cpp.o
-.PHONY : src/vel_reader.cpp.o
-
-src/vel_reader.i: src/vel_reader.cpp.i
-
-.PHONY : src/vel_reader.i
-
-# target to preprocess a source file
-src/vel_reader.cpp.i:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/vel_reader.dir/build.make beginner_tutorials/CMakeFiles/vel_reader.dir/src/vel_reader.cpp.i
-.PHONY : src/vel_reader.cpp.i
-
-src/vel_reader.s: src/vel_reader.cpp.s
-
-.PHONY : src/vel_reader.s
-
-# target to generate assembly for a file
-src/vel_reader.cpp.s:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/vel_reader.dir/build.make beginner_tutorials/CMakeFiles/vel_reader.dir/src/vel_reader.cpp.s
-.PHONY : src/vel_reader.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -855,7 +855,6 @@ help:
 	@echo "... beginner_tutorials_genpy"
 	@echo "... beginner_tutorials_gennodejs"
 	@echo "... beginner_tutorials_genlisp"
-	@echo "... vel_reader"
 	@echo "... beginner_tutorials_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... robot_move"
@@ -871,6 +870,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... robot_vel_reader"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
@@ -896,12 +896,12 @@ help:
 	@echo "... src/robot_move.o"
 	@echo "... src/robot_move.i"
 	@echo "... src/robot_move.s"
+	@echo "... src/robot_vel_reader.o"
+	@echo "... src/robot_vel_reader.i"
+	@echo "... src/robot_vel_reader.s"
 	@echo "... src/talker.o"
 	@echo "... src/talker.i"
 	@echo "... src/talker.s"
-	@echo "... src/vel_reader.o"
-	@echo "... src/vel_reader.i"
-	@echo "... src/vel_reader.s"
 .PHONY : help
 
 

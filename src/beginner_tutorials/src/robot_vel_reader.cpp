@@ -31,7 +31,7 @@ void velCallback(const std_msgs::Int32MultiArray::ConstPtr& msg){
   oldpos_1   = pos_1;
 
   pos_2  = ((double)msg->data[1])/countrev; //Calculates what is the current position of the wheel
-  rpm_3  = deltapos_2/rate_sen;
+  rpm_2  = deltapos_2/rate_sen;
   rads_2 = rpm_2*2*PI;
   rpm_2 *= 60;
   deltapos_2 = pos_2 - oldpos_2;
@@ -52,22 +52,22 @@ void velCallback(const std_msgs::Int32MultiArray::ConstPtr& msg){
   oldpos_4   = pos_4;
 
   //Uncomment for debugging each motor speed
-  // ROS_INFO("Motor 1 RPM: [%lf]", fabs(rpm_1));
-  // ROS_INFO("Motor 1 Rad/s: [%lf]", rads_1);
-  // ROS_INFO("Motor 2 RPM: [%lf]", fabs(rpm_2));
-  // ROS_INFO("Motor 2 Rad/s: [%lf]", rads_2);
-  // ROS_INFO("Motor 3 RPM: [%lf]", fabs(rpm_3));
-  // ROS_INFO("Motor 3 Rad/s: [%lf]", rads_3);
-  // ROS_INFO("Motor 4 RPM: [%lf]", fabs(rpm_4));
-  // ROS_INFO("Motor 4 Rad/s: [%lf]", rads_4);
+  ROS_INFO("Motor 1 RPM: [%lf]", fabs(rpm_1));
+  ROS_INFO("Motor 1 Rad/s: [%lf]", rads_1);
+  ROS_INFO("Motor 2 RPM: [%lf]", fabs(rpm_2));
+  ROS_INFO("Motor 2 Rad/s: [%lf]", rads_2);
+  ROS_INFO("Motor 3 RPM: [%lf]", fabs(rpm_3));
+  ROS_INFO("Motor 3 Rad/s: [%lf]", rads_3);
+  ROS_INFO("Motor 4 RPM: [%lf]", fabs(rpm_4));
+  ROS_INFO("Motor 4 Rad/s: [%lf]", rads_4);
 
   wr = (rads_1+rads_2)/2.0;
   wi = (rads_3+rads_4)/2.0;
 
   linearx  = (radio_in_m*(wr+wi))/2.0;
   angularz = (radio_in_m*(wr-wi))/dis_wheels;
-  ROS_INFO("Linear x: [%lf]", linearx);
-  ROS_INFO("Angular z: [%lf]", angularz);
+  // ROS_INFO("Linear x: [%lf]", linearx);
+  // ROS_INFO("Angular z: [%lf]", angularz);
 }
 
 int main(int argc, char **argv){
@@ -77,7 +77,7 @@ int main(int argc, char **argv){
   ros::Publisher  pub = n.advertise<geometry_msgs::Twist>("robot_twist", 1000);
   ros::Subscriber sub = n.subscribe("robot_vel", 1000, velCallback);
 
-  //Publishes at the same rate it gest the data
+  //Publishes at the same rate it gest the data from the Arduino, in this case each 10ms
   ros::Rate loop_rate(100);
 
   while (ros::ok()){

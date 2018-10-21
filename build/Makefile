@@ -387,19 +387,6 @@ beginner_tutorials_genlisp/fast:
 .PHONY : beginner_tutorials_genlisp/fast
 
 #=============================================================================
-# Target rules for targets named vel_reader
-
-# Build rule for target.
-vel_reader: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vel_reader
-.PHONY : vel_reader
-
-# fast build rule for target.
-vel_reader/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/vel_reader.dir/build.make beginner_tutorials/CMakeFiles/vel_reader.dir/build
-.PHONY : vel_reader/fast
-
-#=============================================================================
 # Target rules for targets named beginner_tutorials_generate_messages_lisp
 
 # Build rule for target.
@@ -593,6 +580,19 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 roscpp_generate_messages_nodejs/fast:
 	$(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named robot_vel_reader
+
+# Build rule for target.
+robot_vel_reader: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_vel_reader
+.PHONY : robot_vel_reader
+
+# fast build rule for target.
+robot_vel_reader/fast:
+	$(MAKE) -f beginner_tutorials/CMakeFiles/robot_vel_reader.dir/build.make beginner_tutorials/CMakeFiles/robot_vel_reader.dir/build
+.PHONY : robot_vel_reader/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
@@ -1183,7 +1183,6 @@ help:
 	@echo "... beginner_tutorials_genpy"
 	@echo "... beginner_tutorials_gennodejs"
 	@echo "... beginner_tutorials_genlisp"
-	@echo "... vel_reader"
 	@echo "... beginner_tutorials_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... robot_move"
@@ -1199,6 +1198,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... robot_vel_reader"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
