@@ -1,0 +1,8 @@
+prefix=/home/esteban/catkin_ws/devel
+
+Name: cedi_pkg
+Description: Description of cedi_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/esteban/catkin_ws/devel/lib 
+Requires: 

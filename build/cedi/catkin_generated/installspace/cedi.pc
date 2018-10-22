@@ -1,0 +1,8 @@
+prefix=/home/esteban/catkin_ws/install
+
+Name: cedi
+Description: Description of cedi
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/esteban/catkin_ws/install/lib 
+Requires: 

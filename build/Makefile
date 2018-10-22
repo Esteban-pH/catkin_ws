@@ -738,6 +738,32 @@ beginner_tutorials_geneus/fast:
 .PHONY : beginner_tutorials_geneus/fast
 
 #=============================================================================
+# Target rules for targets named cedi_move
+
+# Build rule for target.
+cedi_move: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cedi_move
+.PHONY : cedi_move
+
+# fast build rule for target.
+cedi_move/fast:
+	$(MAKE) -f cedi_pkg/CMakeFiles/cedi_move.dir/build.make cedi_pkg/CMakeFiles/cedi_move.dir/build
+.PHONY : cedi_move/fast
+
+#=============================================================================
+# Target rules for targets named cedi_vel
+
+# Build rule for target.
+cedi_vel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cedi_vel
+.PHONY : cedi_vel
+
+# fast build rule for target.
+cedi_vel/fast:
+	$(MAKE) -f cedi_pkg/CMakeFiles/cedi_vel.dir/build.make cedi_pkg/CMakeFiles/cedi_vel.dir/build
+.PHONY : cedi_vel/fast
+
+#=============================================================================
 # Target rules for targets named rplidarNodeClient
 
 # Build rule for target.
@@ -1210,6 +1236,8 @@ help:
 	@echo "... beginner_tutorials_generate_messages_eus"
 	@echo "... _beginner_tutorials_generate_messages_check_deps_Num"
 	@echo "... beginner_tutorials_geneus"
+	@echo "... cedi_move"
+	@echo "... cedi_vel"
 	@echo "... rplidarNodeClient"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_eus"

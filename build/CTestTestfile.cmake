@@ -7,6 +7,7 @@
 subdirs(gtest)
 subdirs(two_wheels_description)
 subdirs(beginner_tutorials)
+subdirs(cedi_pkg)
 subdirs(esteban_pkg)
 subdirs(rplidar_ros-master)
 subdirs(super_pkg)
