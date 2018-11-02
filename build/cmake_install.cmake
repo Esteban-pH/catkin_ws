@@ -123,6 +123,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/esteban/catkin_ws/build/esteban_pkg/cmake_install.cmake")
   include("/home/esteban/catkin_ws/build/rplidar_ros-master/cmake_install.cmake")
   include("/home/esteban/catkin_ws/build/super_pkg/cmake_install.cmake")
+  include("/home/esteban/catkin_ws/build/myhector_slam_config/cmake_install.cmake")
 
 endif()
 

@@ -82,12 +82,12 @@ void Teleop::keyLoop(){
     switch(c){
       case KEYCODE_L:
         ROS_DEBUG("LEFT");
-        angular_ = 3.0;
+        angular_ = 4.5;
         dirty = true;
         break;
       case KEYCODE_R:
         ROS_DEBUG("RIGHT");
-        angular_ = -3.0;
+        angular_ = -4.5;
         dirty = true;
         break;
       case KEYCODE_U:
