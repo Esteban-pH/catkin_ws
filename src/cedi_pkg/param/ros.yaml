@@ -5,7 +5,7 @@
 laser_frame: laser
 robot_frame: base_link
 odometry_frame: base_link
-offset_frame: offset
+#offset_frame: offset
 map_frame: map
 
 ### ROS topics ############################################
