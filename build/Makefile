@@ -764,6 +764,19 @@ cedi_vel/fast:
 .PHONY : cedi_vel/fast
 
 #=============================================================================
+# Target rules for targets named cedi_move_nav2d
+
+# Build rule for target.
+cedi_move_nav2d: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cedi_move_nav2d
+.PHONY : cedi_move_nav2d
+
+# fast build rule for target.
+cedi_move_nav2d/fast:
+	$(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build
+.PHONY : cedi_move_nav2d/fast
+
+#=============================================================================
 # Target rules for targets named rplidarNodeClient
 
 # Build rule for target.
@@ -1433,6 +1446,7 @@ help:
 	@echo "... beginner_tutorials_geneus"
 	@echo "... cedi_move"
 	@echo "... cedi_vel"
+	@echo "... cedi_move_nav2d"
 	@echo "... rplidarNodeClient"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_eus"

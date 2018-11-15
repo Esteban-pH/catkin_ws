@@ -111,17 +111,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -132,6 +121,17 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -195,6 +195,21 @@ cedi_vel/fast:
 	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_vel.dir/build.make cedi_pkg/CMakeFiles/cedi_vel.dir/build
 .PHONY : cedi_vel/fast
 
+# Convenience name for target.
+cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/rule:
+	cd /home/esteban/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/rule
+.PHONY : cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/rule
+
+# Convenience name for target.
+cedi_move_nav2d: cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/rule
+
+.PHONY : cedi_move_nav2d
+
+# fast build rule for target.
+cedi_move_nav2d/fast:
+	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build
+.PHONY : cedi_move_nav2d/fast
+
 src/cedi_move.o: src/cedi_move.cpp.o
 
 .PHONY : src/cedi_move.o
@@ -221,6 +236,33 @@ src/cedi_move.s: src/cedi_move.cpp.s
 src/cedi_move.cpp.s:
 	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move.dir/build.make cedi_pkg/CMakeFiles/cedi_move.dir/src/cedi_move.cpp.s
 .PHONY : src/cedi_move.cpp.s
+
+src/cedi_move_nav2d.o: src/cedi_move_nav2d.cpp.o
+
+.PHONY : src/cedi_move_nav2d.o
+
+# target to build an object file
+src/cedi_move_nav2d.cpp.o:
+	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/src/cedi_move_nav2d.cpp.o
+.PHONY : src/cedi_move_nav2d.cpp.o
+
+src/cedi_move_nav2d.i: src/cedi_move_nav2d.cpp.i
+
+.PHONY : src/cedi_move_nav2d.i
+
+# target to preprocess a source file
+src/cedi_move_nav2d.cpp.i:
+	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/src/cedi_move_nav2d.cpp.i
+.PHONY : src/cedi_move_nav2d.cpp.i
+
+src/cedi_move_nav2d.s: src/cedi_move_nav2d.cpp.s
+
+.PHONY : src/cedi_move_nav2d.s
+
+# target to generate assembly for a file
+src/cedi_move_nav2d.cpp.s:
+	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/src/cedi_move_nav2d.cpp.s
+.PHONY : src/cedi_move_nav2d.cpp.s
 
 src/cedi_vel.o: src/cedi_vel.cpp.o
 
@@ -259,14 +301,18 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
 	@echo "... cedi_move"
 	@echo "... cedi_vel"
-	@echo "... install/strip"
+	@echo "... test"
+	@echo "... cedi_move_nav2d"
 	@echo "... install/local"
+	@echo "... install/strip"
 	@echo "... src/cedi_move.o"
 	@echo "... src/cedi_move.i"
 	@echo "... src/cedi_move.s"
+	@echo "... src/cedi_move_nav2d.o"
+	@echo "... src/cedi_move_nav2d.i"
+	@echo "... src/cedi_move_nav2d.s"
 	@echo "... src/cedi_vel.o"
 	@echo "... src/cedi_vel.i"
 	@echo "... src/cedi_vel.s"

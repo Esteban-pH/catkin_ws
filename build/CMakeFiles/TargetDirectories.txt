@@ -81,11 +81,12 @@
 /home/esteban/catkin_ws/build/cedi_pkg/CMakeFiles/install.dir
 /home/esteban/catkin_ws/build/cedi_pkg/CMakeFiles/rebuild_cache.dir
 /home/esteban/catkin_ws/build/cedi_pkg/CMakeFiles/edit_cache.dir
-/home/esteban/catkin_ws/build/cedi_pkg/CMakeFiles/test.dir
 /home/esteban/catkin_ws/build/cedi_pkg/CMakeFiles/cedi_move.dir
 /home/esteban/catkin_ws/build/cedi_pkg/CMakeFiles/cedi_vel.dir
-/home/esteban/catkin_ws/build/cedi_pkg/CMakeFiles/install/strip.dir
+/home/esteban/catkin_ws/build/cedi_pkg/CMakeFiles/test.dir
+/home/esteban/catkin_ws/build/cedi_pkg/CMakeFiles/cedi_move_nav2d.dir
 /home/esteban/catkin_ws/build/cedi_pkg/CMakeFiles/install/local.dir
+/home/esteban/catkin_ws/build/cedi_pkg/CMakeFiles/install/strip.dir
 /home/esteban/catkin_ws/build/esteban_pkg/CMakeFiles/list_install_components.dir
 /home/esteban/catkin_ws/build/esteban_pkg/CMakeFiles/install.dir
 /home/esteban/catkin_ws/build/esteban_pkg/CMakeFiles/rebuild_cache.dir

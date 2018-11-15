@@ -202,3 +202,6 @@ target_link_libraries(cedi_move ${catkin_LIBRARIES})
 
 add_executable(cedi_vel src/cedi_vel.cpp)
 target_link_libraries(cedi_vel ${catkin_LIBRARIES})
+
+add_executable(cedi_move_nav2d src/cedi_move_nav2d.cpp)
+target_link_libraries(cedi_move_nav2d ${catkin_LIBRARIES})

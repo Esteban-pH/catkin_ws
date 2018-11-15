@@ -309,6 +309,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "beginner_tutorials/CMakeFiles/beginner_tutorials_geneus.dir/DependInfo.cmake"
   "cedi_pkg/CMakeFiles/cedi_move.dir/DependInfo.cmake"
   "cedi_pkg/CMakeFiles/cedi_vel.dir/DependInfo.cmake"
+  "cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/DependInfo.cmake"
   "rplidar_ros-master/CMakeFiles/rplidarNodeClient.dir/DependInfo.cmake"
   "rplidar_ros-master/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
   "rplidar_ros-master/CMakeFiles/sensor_msgs_generate_messages_eus.dir/DependInfo.cmake"
