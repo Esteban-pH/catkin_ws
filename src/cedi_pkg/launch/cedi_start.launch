@@ -1,13 +1,10 @@
 <launch>
-  <!--TF's needed-->
-  <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0.0045 0 .15 3.14159 0 0 base_link laser 100"/>
-  <node pkg="tf" type="static_transform_publisher" name="link2_broadcaster" args="0 0 0 0 0 0 odom base_link 100"/>
-
-  <!--Mapping Part-->
-  <arg name="geotiff_map_file_path" default="$(find hector_geotiff)/maps"/>
   <param name="/use_sim_time" value="false"/>
+  <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 scanmatcher_frame base_link 10"/>
+  <node pkg="tf" type="static_transform_publisher" name="link2_broadcaster" args="0.0045 0 .15 3.14159 0 0 base_link base_laser_link 10"/>
 
-  <!--RVIZ Vizualization-->
+  <arg name="geotiff_map_file_path" default="$(find hector_geotiff)/maps"/>
+
   <node pkg="rviz" type="rviz" name="rviz"
     args="-d $(find cedi_pkg)/rviz_cfg/mapping_demo.rviz"/>
 
@@ -18,16 +15,28 @@
     <arg name="map_file_path" value="$(arg geotiff_map_file_path)"/>
   </include>
 
-  <!--Nav2D Part-->
   <param name="use_sim_time" value="false" />
   <rosparam file="$(find cedi_pkg)/param/ros.yaml"/>
 
   <node name="Operator" pkg="nav2d_operator" type="operator" >
+    <remap from="scan" to="base_scan"/>
     <rosparam file="$(find cedi_pkg)/param/operator.yaml"/>
     <rosparam file="$(find cedi_pkg)/param/costmap.yaml" ns="local_map" />
   </node>
 
-  <!--RVIZ Vizualization-->
-  <node name="RVIZ" pkg="rviz" type="rviz" args=" -d $(find cedi_pkg)/param/tutorial1.rviz" />
+  <node name="Mapper" pkg="nav2d_karto" type="mapper">
+    <remap from="scan" to="base_scan"/>
+  	<rosparam file="$(find cedi_pkg)/param/mapper.yaml"/>
+  </node>
+
+  <node name="Navigator" pkg="nav2d_navigator" type="navigator">
+  	<rosparam file="$(find cedi_pkg)/param/navigator.yaml"/>
+  </node>
+
+  <node name="GetMap" pkg="nav2d_navigator" type="get_map_client" />
+  <node name="Explore" pkg="nav2d_navigator" type="explore_client" />
+  <node name="SetGoal" pkg="nav2d_navigator" type="set_goal_client" />
+
+  <node name="RVIZ" pkg="rviz" type="rviz" args=" -d $(find cedi_pkg)/param/tutorial3.rviz" />
 
 </launch>
