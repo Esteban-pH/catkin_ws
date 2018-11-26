@@ -5,8 +5,8 @@
 
   <arg name="geotiff_map_file_path" default="$(find hector_geotiff)/maps"/>
 
-  <node pkg="rviz" type="rviz" name="rviz"
-    args="-d $(find cedi_pkg)/rviz_cfg/mapping_demo.rviz"/>
+  <!-- <node pkg="rviz" type="rviz" name="rviz"
+    args="-d $(find cedi_pkg)/rviz_cfg/mapping_demo.rviz"/> -->
 
   <include file="$(find cedi_pkg)/launch/mapping_default.launch"/>
 
