@@ -1,0 +1,2 @@
+set(dialogflow_ros_MESSAGE_FILES "/home/esteban/catkin_ws/src/dialogflow_ros/msg/DialogflowResult.msg;/home/esteban/catkin_ws/src/dialogflow_ros/msg/DialogflowContext.msg;/home/esteban/catkin_ws/src/dialogflow_ros/msg/DialogflowParameter.msg;/home/esteban/catkin_ws/src/dialogflow_ros/msg/DialogflowRequest.msg")
+set(dialogflow_ros_SERVICE_FILES "/home/esteban/catkin_ws/src/dialogflow_ros/srv/DialogflowService.srv")

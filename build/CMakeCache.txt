@@ -229,6 +229,9 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
 
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
 
@@ -277,6 +280,18 @@ beginner_tutorials_BINARY_DIR:STATIC=/home/esteban/catkin_ws/build/beginner_tuto
 //Value Computed by CMake
 beginner_tutorials_SOURCE_DIR:STATIC=/home/esteban/catkin_ws/src/beginner_tutorials
 
+//The directory containing a CMake configuration file for bond.
+bond_DIR:PATH=/opt/ros/kinetic/share/bond/cmake
+
+//The directory containing a CMake configuration file for bondcpp.
+bondcpp_DIR:PATH=/opt/ros/kinetic/share/bondcpp/cmake
+
+//The directory containing a CMake configuration file for camera_calibration_parsers.
+camera_calibration_parsers_DIR:PATH=/opt/ros/kinetic/share/camera_calibration_parsers/cmake
+
+//The directory containing a CMake configuration file for camera_info_manager.
+camera_info_manager_DIR:PATH=/opt/ros/kinetic/share/camera_info_manager/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 
@@ -292,17 +307,52 @@ cedi_pkg_BINARY_DIR:STATIC=/home/esteban/catkin_ws/build/cedi_pkg
 //Value Computed by CMake
 cedi_pkg_SOURCE_DIR:STATIC=/home/esteban/catkin_ws/src/cedi_pkg
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/kinetic/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for diagnostic_msgs.
+diagnostic_msgs_DIR:PATH=/opt/ros/kinetic/share/diagnostic_msgs/cmake
+
+//The directory containing a CMake configuration file for diagnostic_updater.
+diagnostic_updater_DIR:PATH=/opt/ros/kinetic/share/diagnostic_updater/cmake
+
+//Value Computed by CMake
+dialogflow_ros_BINARY_DIR:STATIC=/home/esteban/catkin_ws/build/dialogflow_ros
+
+//Value Computed by CMake
+dialogflow_ros_SOURCE_DIR:STATIC=/home/esteban/catkin_ws/src/dialogflow_ros
+
+//The directory containing a CMake configuration file for dynamic_reconfigure.
+dynamic_reconfigure_DIR:PATH=/opt/ros/kinetic/share/dynamic_reconfigure/cmake
 
 //Value Computed by CMake
 esteban_pkg_BINARY_DIR:STATIC=/home/esteban/catkin_ws/build/esteban_pkg
 
-//The directory containing a CMake configuration file for esteban_pkg.
-esteban_pkg_DIR:PATH=/home/esteban/catkin_ws/devel/share/esteban_pkg/cmake
+esteban_pkg_DIR:PATH=
 
 //Value Computed by CMake
 esteban_pkg_SOURCE_DIR:STATIC=/home/esteban/catkin_ws/src/esteban_pkg
+
+//Value Computed by CMake
+freenect_camera_BINARY_DIR:STATIC=/home/esteban/catkin_ws/build/freenect_stack/freenect_camera
+
+//Value Computed by CMake
+freenect_camera_SOURCE_DIR:STATIC=/home/esteban/catkin_ws/src/freenect_stack/freenect_camera
+
+//Value Computed by CMake
+freenect_launch_BINARY_DIR:STATIC=/home/esteban/catkin_ws/build/freenect_stack/freenect_launch
+
+//Value Computed by CMake
+freenect_launch_SOURCE_DIR:STATIC=/home/esteban/catkin_ws/src/freenect_stack/freenect_launch
+
+//Value Computed by CMake
+freenect_stack_BINARY_DIR:STATIC=/home/esteban/catkin_ws/build/freenect_stack/freenect_stack
+
+//Value Computed by CMake
+freenect_stack_SOURCE_DIR:STATIC=/home/esteban/catkin_ws/src/freenect_stack/freenect_stack
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/kinetic/share/gencpp/cmake
@@ -369,7 +419,10 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //The directory containing a CMake configuration file for hector_mapping.
-hector_mapping_DIR:PATH=/opt/ros/kinetic/share/hector_mapping/cmake
+hector_mapping_DIR:PATH=hector_mapping_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/kinetic/share/image_transport/cmake
 
 //The directory containing a CMake configuration file for kdl_conversions.
 kdl_conversions_DIR:PATH=/opt/ros/kinetic/share/kdl_conversions/cmake
@@ -378,7 +431,7 @@ kdl_conversions_DIR:PATH=/opt/ros/kinetic/share/kdl_conversions/cmake
 laser_geometry_DIR:PATH=/opt/ros/kinetic/share/laser_geometry/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/libkdl_conversions.so
+lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/kinetic/share/message_filters/cmake
@@ -397,6 +450,12 @@ myhector_slam_config_SOURCE_DIR:STATIC=/home/esteban/catkin_ws/src/myhector_slam
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/kinetic/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for nodelet.
+nodelet_DIR:PATH=/opt/ros/kinetic/share/nodelet/cmake
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake
 
 //Value Computed by CMake
 robot_proy_BINARY_DIR:STATIC=/home/esteban/catkin_ws/build/robot_proy
@@ -422,6 +481,12 @@ rosgraph_DIR:PATH=/opt/ros/kinetic/share/rosgraph/cmake
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/kinetic/share/rosgraph_msgs/cmake
 
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/kinetic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/kinetic/share/rospack/cmake
+
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake
 
@@ -436,6 +501,9 @@ rplidar_ros_SOURCE_DIR:STATIC=/home/esteban/catkin_ws/src/rplidar_ros-master
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
+
+//The directory containing a CMake configuration file for smclib.
+smclib_DIR:PATH=/opt/ros/kinetic/share/smclib/cmake
 
 //The directory containing a CMake configuration file for sroscpp.
 sroscpp_DIR:PATH=sroscpp_DIR-NOTFOUND
@@ -581,7 +649,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -620,6 +688,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.12()]
 //Details about finding Threads
@@ -644,6 +714,32 @@ GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
 GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+LIBFREENECT_CFLAGS:INTERNAL=
+LIBFREENECT_CFLAGS_I:INTERNAL=
+LIBFREENECT_CFLAGS_OTHER:INTERNAL=
+LIBFREENECT_FOUND:INTERNAL=
+LIBFREENECT_INCLUDEDIR:INTERNAL=
+LIBFREENECT_LIBDIR:INTERNAL=
+LIBFREENECT_LIBS:INTERNAL=
+LIBFREENECT_LIBS_L:INTERNAL=
+LIBFREENECT_LIBS_OTHER:INTERNAL=
+LIBFREENECT_LIBS_PATHS:INTERNAL=
+LIBFREENECT_PREFIX:INTERNAL=
+LIBFREENECT_STATIC_CFLAGS:INTERNAL=
+LIBFREENECT_STATIC_CFLAGS_I:INTERNAL=
+LIBFREENECT_STATIC_CFLAGS_OTHER:INTERNAL=
+LIBFREENECT_STATIC_LIBDIR:INTERNAL=
+LIBFREENECT_STATIC_LIBS:INTERNAL=
+LIBFREENECT_STATIC_LIBS_L:INTERNAL=
+LIBFREENECT_STATIC_LIBS_OTHER:INTERNAL=
+LIBFREENECT_STATIC_LIBS_PATHS:INTERNAL=
+LIBFREENECT_VERSION:INTERNAL=
+LIBFREENECT_libfreenect_INCLUDEDIR:INTERNAL=
+LIBFREENECT_libfreenect_LIBDIR:INTERNAL=
+LIBFREENECT_libfreenect_PREFIX:INTERNAL=
+LIBFREENECT_libfreenect_VERSION:INTERNAL=
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //This needs to be in PYTHONPATH when 'setup.py install' is called.

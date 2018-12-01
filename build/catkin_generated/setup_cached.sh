@@ -5,7 +5,9 @@
 # it emulates the modifications of the setup script without recurring computations
 
 # new environment variables
+export ROSLISP_PACKAGE_DIRECTORIES="/home/esteban/catkin_ws/devel/share/common-lisp"
 
 # modified environment variables
 export LD_LIBRARY_PATH="/home/esteban/catkin_ws/devel/lib:/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:/usr/local/cuda-10.0/lib64"
+export PKG_CONFIG_PATH="/home/esteban/catkin_ws/devel/lib/pkgconfig:/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
 export PWD="/home/esteban/catkin_ws/build"
