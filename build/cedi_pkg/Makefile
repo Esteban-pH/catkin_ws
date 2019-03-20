@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/esteban/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/cob/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/esteban/catkin_ws/build
+CMAKE_BINARY_DIR = /home/cob/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -122,27 +122,16 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /home/esteban/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/esteban/catkin_ws/build/CMakeFiles /home/esteban/catkin_ws/build/cedi_pkg/CMakeFiles/progress.marks
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/esteban/catkin_ws/build/CMakeFiles 0
+	cd /home/cob/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cob/catkin_ws/build/CMakeFiles /home/cob/catkin_ws/build/cedi_pkg/CMakeFiles/progress.marks
+	cd /home/cob/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cob/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/clean
+	cd /home/cob/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/preinstall
+	cd /home/cob/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/preinstall
+	cd /home/cob/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/esteban/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cob/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 cedi_pkg/CMakeFiles/cedi_move.dir/rule:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/CMakeFiles/cedi_move.dir/rule
+	cd /home/cob/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/CMakeFiles/cedi_move.dir/rule
 .PHONY : cedi_pkg/CMakeFiles/cedi_move.dir/rule
 
 # Convenience name for target.
@@ -177,12 +166,12 @@ cedi_move: cedi_pkg/CMakeFiles/cedi_move.dir/rule
 
 # fast build rule for target.
 cedi_move/fast:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move.dir/build.make cedi_pkg/CMakeFiles/cedi_move.dir/build
+	cd /home/cob/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move.dir/build.make cedi_pkg/CMakeFiles/cedi_move.dir/build
 .PHONY : cedi_move/fast
 
 # Convenience name for target.
 cedi_pkg/CMakeFiles/cedi_vel.dir/rule:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/CMakeFiles/cedi_vel.dir/rule
+	cd /home/cob/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/CMakeFiles/cedi_vel.dir/rule
 .PHONY : cedi_pkg/CMakeFiles/cedi_vel.dir/rule
 
 # Convenience name for target.
@@ -192,12 +181,12 @@ cedi_vel: cedi_pkg/CMakeFiles/cedi_vel.dir/rule
 
 # fast build rule for target.
 cedi_vel/fast:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_vel.dir/build.make cedi_pkg/CMakeFiles/cedi_vel.dir/build
+	cd /home/cob/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_vel.dir/build.make cedi_pkg/CMakeFiles/cedi_vel.dir/build
 .PHONY : cedi_vel/fast
 
 # Convenience name for target.
 cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/rule:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/rule
+	cd /home/cob/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/rule
 .PHONY : cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/rule
 
 # Convenience name for target.
@@ -207,7 +196,7 @@ cedi_move_nav2d: cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/rule
 
 # fast build rule for target.
 cedi_move_nav2d/fast:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build
+	cd /home/cob/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build
 .PHONY : cedi_move_nav2d/fast
 
 src/cedi_move.o: src/cedi_move.cpp.o
@@ -216,7 +205,7 @@ src/cedi_move.o: src/cedi_move.cpp.o
 
 # target to build an object file
 src/cedi_move.cpp.o:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move.dir/build.make cedi_pkg/CMakeFiles/cedi_move.dir/src/cedi_move.cpp.o
+	cd /home/cob/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move.dir/build.make cedi_pkg/CMakeFiles/cedi_move.dir/src/cedi_move.cpp.o
 .PHONY : src/cedi_move.cpp.o
 
 src/cedi_move.i: src/cedi_move.cpp.i
@@ -225,7 +214,7 @@ src/cedi_move.i: src/cedi_move.cpp.i
 
 # target to preprocess a source file
 src/cedi_move.cpp.i:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move.dir/build.make cedi_pkg/CMakeFiles/cedi_move.dir/src/cedi_move.cpp.i
+	cd /home/cob/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move.dir/build.make cedi_pkg/CMakeFiles/cedi_move.dir/src/cedi_move.cpp.i
 .PHONY : src/cedi_move.cpp.i
 
 src/cedi_move.s: src/cedi_move.cpp.s
@@ -234,7 +223,7 @@ src/cedi_move.s: src/cedi_move.cpp.s
 
 # target to generate assembly for a file
 src/cedi_move.cpp.s:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move.dir/build.make cedi_pkg/CMakeFiles/cedi_move.dir/src/cedi_move.cpp.s
+	cd /home/cob/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move.dir/build.make cedi_pkg/CMakeFiles/cedi_move.dir/src/cedi_move.cpp.s
 .PHONY : src/cedi_move.cpp.s
 
 src/cedi_move_nav2d.o: src/cedi_move_nav2d.cpp.o
@@ -243,7 +232,7 @@ src/cedi_move_nav2d.o: src/cedi_move_nav2d.cpp.o
 
 # target to build an object file
 src/cedi_move_nav2d.cpp.o:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/src/cedi_move_nav2d.cpp.o
+	cd /home/cob/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/src/cedi_move_nav2d.cpp.o
 .PHONY : src/cedi_move_nav2d.cpp.o
 
 src/cedi_move_nav2d.i: src/cedi_move_nav2d.cpp.i
@@ -252,7 +241,7 @@ src/cedi_move_nav2d.i: src/cedi_move_nav2d.cpp.i
 
 # target to preprocess a source file
 src/cedi_move_nav2d.cpp.i:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/src/cedi_move_nav2d.cpp.i
+	cd /home/cob/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/src/cedi_move_nav2d.cpp.i
 .PHONY : src/cedi_move_nav2d.cpp.i
 
 src/cedi_move_nav2d.s: src/cedi_move_nav2d.cpp.s
@@ -261,7 +250,7 @@ src/cedi_move_nav2d.s: src/cedi_move_nav2d.cpp.s
 
 # target to generate assembly for a file
 src/cedi_move_nav2d.cpp.s:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/src/cedi_move_nav2d.cpp.s
+	cd /home/cob/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/build.make cedi_pkg/CMakeFiles/cedi_move_nav2d.dir/src/cedi_move_nav2d.cpp.s
 .PHONY : src/cedi_move_nav2d.cpp.s
 
 src/cedi_vel.o: src/cedi_vel.cpp.o
@@ -270,7 +259,7 @@ src/cedi_vel.o: src/cedi_vel.cpp.o
 
 # target to build an object file
 src/cedi_vel.cpp.o:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_vel.dir/build.make cedi_pkg/CMakeFiles/cedi_vel.dir/src/cedi_vel.cpp.o
+	cd /home/cob/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_vel.dir/build.make cedi_pkg/CMakeFiles/cedi_vel.dir/src/cedi_vel.cpp.o
 .PHONY : src/cedi_vel.cpp.o
 
 src/cedi_vel.i: src/cedi_vel.cpp.i
@@ -279,7 +268,7 @@ src/cedi_vel.i: src/cedi_vel.cpp.i
 
 # target to preprocess a source file
 src/cedi_vel.cpp.i:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_vel.dir/build.make cedi_pkg/CMakeFiles/cedi_vel.dir/src/cedi_vel.cpp.i
+	cd /home/cob/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_vel.dir/build.make cedi_pkg/CMakeFiles/cedi_vel.dir/src/cedi_vel.cpp.i
 .PHONY : src/cedi_vel.cpp.i
 
 src/cedi_vel.s: src/cedi_vel.cpp.s
@@ -288,7 +277,7 @@ src/cedi_vel.s: src/cedi_vel.cpp.s
 
 # target to generate assembly for a file
 src/cedi_vel.cpp.s:
-	cd /home/esteban/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_vel.dir/build.make cedi_pkg/CMakeFiles/cedi_vel.dir/src/cedi_vel.cpp.s
+	cd /home/cob/catkin_ws/build && $(MAKE) -f cedi_pkg/CMakeFiles/cedi_vel.dir/build.make cedi_pkg/CMakeFiles/cedi_vel.dir/src/cedi_vel.cpp.s
 .PHONY : src/cedi_vel.cpp.s
 
 # Help Target
@@ -306,7 +295,6 @@ help:
 	@echo "... test"
 	@echo "... cedi_move_nav2d"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... src/cedi_move.o"
 	@echo "... src/cedi_move.i"
 	@echo "... src/cedi_move.s"
@@ -327,6 +315,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/esteban/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cob/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

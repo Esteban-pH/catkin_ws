@@ -53,3 +53,182 @@ Makefile:126: recipe for target 'cmTC_61e14/fast' failed
 make: *** [cmTC_61e14/fast] Error 2
 
 
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c0877/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c0877.dir/build.make CMakeFiles/cmTC_c0877.dir/build
+make[1]: Entering directory '/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c0877.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_c0877.dir/CheckSymbolExists.c.o   -c /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c0877
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0877.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_c0877.dir/CheckSymbolExists.c.o  -o cmTC_c0877 -rdynamic 
+CMakeFiles/cmTC_c0877.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c0877.dir/build.make:97: recipe for target 'cmTC_c0877' failed
+make[1]: *** [cmTC_c0877] Error 1
+make[1]: Leaving directory '/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c0877/fast' failed
+make: *** [cmTC_c0877/fast] Error 2
+
+File /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dd7be/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dd7be.dir/build.make CMakeFiles/cmTC_dd7be.dir/build
+make[1]: Entering directory '/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd7be.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_dd7be.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dd7be
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd7be.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_dd7be.dir/CheckFunctionExists.c.o  -o cmTC_dd7be -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_dd7be.dir/build.make:97: recipe for target 'cmTC_dd7be' failed
+make[1]: *** [cmTC_dd7be] Error 1
+make[1]: Leaving directory '/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dd7be/fast' failed
+make: *** [cmTC_dd7be/fast] Error 2
+
+
+Determining if the CL_VERSION_2_0 exist failed with the following output:
+Change Dir: /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2ee26/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2ee26.dir/build.make CMakeFiles/cmTC_2ee26.dir/build
+make[1]: Entering directory '/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ee26.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_2ee26.dir/CheckSymbolExists.c.o   -c /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:47: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_2ee26.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2ee26.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_2ee26.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2ee26/fast' failed
+make: *** [cmTC_2ee26/fast] Error 2
+
+File /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_2_0
+  return ((int*)(&CL_VERSION_2_0))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_1_2 exist failed with the following output:
+Change Dir: /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9ae06/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9ae06.dir/build.make CMakeFiles/cmTC_9ae06.dir/build
+make[1]: Entering directory '/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ae06.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_9ae06.dir/CheckSymbolExists.c.o   -c /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:47: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_9ae06.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_9ae06.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_9ae06.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9ae06/fast' failed
+make: *** [cmTC_9ae06/fast] Error 2
+
+File /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_1_2
+  return ((int*)(&CL_VERSION_1_2))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_1_1 exist failed with the following output:
+Change Dir: /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4582e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4582e.dir/build.make CMakeFiles/cmTC_4582e.dir/build
+make[1]: Entering directory '/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4582e.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_4582e.dir/CheckSymbolExists.c.o   -c /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:47: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_4582e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4582e.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_4582e.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4582e/fast' failed
+make: *** [cmTC_4582e/fast] Error 2
+
+File /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_1_1
+  return ((int*)(&CL_VERSION_1_1))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_1_0 exist failed with the following output:
+Change Dir: /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_41c33/fast"
+/usr/bin/make -f CMakeFiles/cmTC_41c33.dir/build.make CMakeFiles/cmTC_41c33.dir/build
+make[1]: Entering directory '/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41c33.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_41c33.dir/CheckSymbolExists.c.o   -c /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:47: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_41c33.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_41c33.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_41c33.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/cob/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_41c33/fast' failed
+make: *** [cmTC_41c33/fast] Error 2
+
+File /home/cob/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_1_0
+  return ((int*)(&CL_VERSION_1_0))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

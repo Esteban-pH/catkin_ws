@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/esteban/catkin_ws/src/rplidar_ros-master/sdk/src/arch/linux/net_serial.cpp" "/home/esteban/catkin_ws/build/rplidar_ros-master/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o"
-  "/home/esteban/catkin_ws/src/rplidar_ros-master/sdk/src/arch/linux/net_socket.cpp" "/home/esteban/catkin_ws/build/rplidar_ros-master/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o"
-  "/home/esteban/catkin_ws/src/rplidar_ros-master/sdk/src/arch/linux/timer.cpp" "/home/esteban/catkin_ws/build/rplidar_ros-master/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o"
-  "/home/esteban/catkin_ws/src/rplidar_ros-master/sdk/src/hal/thread.cpp" "/home/esteban/catkin_ws/build/rplidar_ros-master/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o"
-  "/home/esteban/catkin_ws/src/rplidar_ros-master/sdk/src/rplidar_driver.cpp" "/home/esteban/catkin_ws/build/rplidar_ros-master/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o"
-  "/home/esteban/catkin_ws/src/rplidar_ros-master/src/node.cpp" "/home/esteban/catkin_ws/build/rplidar_ros-master/CMakeFiles/rplidarNode.dir/src/node.cpp.o"
+  "/home/cob/catkin_ws/src/rplidar_ros-master/sdk/src/arch/linux/net_serial.cpp" "/home/cob/catkin_ws/build/rplidar_ros-master/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o"
+  "/home/cob/catkin_ws/src/rplidar_ros-master/sdk/src/arch/linux/net_socket.cpp" "/home/cob/catkin_ws/build/rplidar_ros-master/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o"
+  "/home/cob/catkin_ws/src/rplidar_ros-master/sdk/src/arch/linux/timer.cpp" "/home/cob/catkin_ws/build/rplidar_ros-master/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o"
+  "/home/cob/catkin_ws/src/rplidar_ros-master/sdk/src/hal/thread.cpp" "/home/cob/catkin_ws/build/rplidar_ros-master/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o"
+  "/home/cob/catkin_ws/src/rplidar_ros-master/sdk/src/rplidar_driver.cpp" "/home/cob/catkin_ws/build/rplidar_ros-master/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o"
+  "/home/cob/catkin_ws/src/rplidar_ros-master/src/node.cpp" "/home/cob/catkin_ws/build/rplidar_ros-master/CMakeFiles/rplidarNode.dir/src/node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,8 +22,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/esteban/catkin_ws/src/rplidar_ros-master/./sdk/include"
-  "/home/esteban/catkin_ws/src/rplidar_ros-master/./sdk/src"
+  "/home/cob/catkin_ws/src/rplidar_ros-master/./sdk/include"
+  "/home/cob/catkin_ws/src/rplidar_ros-master/./sdk/src"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

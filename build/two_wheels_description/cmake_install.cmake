@@ -1,8 +1,8 @@
-# Install script for directory: /home/esteban/catkin_ws/src/two_wheels_description
+# Install script for directory: /home/cob/catkin_ws/src/two_wheels_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/esteban/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/cob/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/esteban/catkin_ws/build/two_wheels_description/catkin_generated/installspace/two_wheels_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cob/catkin_ws/build/two_wheels_description/catkin_generated/installspace/two_wheels_description.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/two_wheels_description/cmake" TYPE FILE FILES
-    "/home/esteban/catkin_ws/build/two_wheels_description/catkin_generated/installspace/two_wheels_descriptionConfig.cmake"
-    "/home/esteban/catkin_ws/build/two_wheels_description/catkin_generated/installspace/two_wheels_descriptionConfig-version.cmake"
+    "/home/cob/catkin_ws/build/two_wheels_description/catkin_generated/installspace/two_wheels_descriptionConfig.cmake"
+    "/home/cob/catkin_ws/build/two_wheels_description/catkin_generated/installspace/two_wheels_descriptionConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/two_wheels_description" TYPE FILE FILES "/home/esteban/catkin_ws/src/two_wheels_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/two_wheels_description" TYPE FILE FILES "/home/cob/catkin_ws/src/two_wheels_description/package.xml")
 endif()
 

@@ -1,8 +1,8 @@
-prefix=/home/esteban/catkin_ws/install
+prefix=/home/cob/catkin_ws/install
 
 Name: cedi_pkg
 Description: Description of cedi_pkg
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/esteban/catkin_ws/install/lib 
+Libs: -L/home/cob/catkin_ws/install/lib 
 Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/cob/catkin_ws/install
+
+Name: test_tf2
+Description: Description of test_tf2
+Version: 0.5.20
+Cflags: 
+Libs: -L/home/cob/catkin_ws/install/lib 
+Requires: 

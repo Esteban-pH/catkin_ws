@@ -1,8 +1,8 @@
-# Install script for directory: /home/esteban/catkin_ws/src/esteban_pkg
+# Install script for directory: /home/cob/catkin_ws/src/esteban_pkg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/esteban/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/cob/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/esteban/catkin_ws/build/esteban_pkg/catkin_generated/installspace/esteban_pkg.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cob/catkin_ws/build/esteban_pkg/catkin_generated/installspace/esteban_pkg.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esteban_pkg/cmake" TYPE FILE FILES
-    "/home/esteban/catkin_ws/build/esteban_pkg/catkin_generated/installspace/esteban_pkgConfig.cmake"
-    "/home/esteban/catkin_ws/build/esteban_pkg/catkin_generated/installspace/esteban_pkgConfig-version.cmake"
+    "/home/cob/catkin_ws/build/esteban_pkg/catkin_generated/installspace/esteban_pkgConfig.cmake"
+    "/home/cob/catkin_ws/build/esteban_pkg/catkin_generated/installspace/esteban_pkgConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esteban_pkg" TYPE FILE FILES "/home/esteban/catkin_ws/src/esteban_pkg/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esteban_pkg" TYPE FILE FILES "/home/cob/catkin_ws/src/esteban_pkg/package.xml")
 endif()
 

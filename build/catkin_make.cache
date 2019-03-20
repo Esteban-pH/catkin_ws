@@ -1,2 +1,2 @@
-beginner_tutorials:cedi_pkg:dialogflow_ros:esteban_pkg:myhector_slam_config:rplidar_ros-master:super_pkg:two_wheels_description
--DCATKIN_DEVEL_PREFIX=/home/esteban/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/esteban/catkin_ws/install -G Unix Makefiles
+beginner_tutorials:cedi_pkg:esteban_pkg:geometry2/geometry2:geometry2/geometry_experimental:geometry2/test_tf2:geometry2/tf2:geometry2/tf2_bullet:geometry2/tf2_eigen:geometry2/tf2_geometry_msgs:geometry2/tf2_kdl:geometry2/tf2_msgs:geometry2/tf2_py:geometry2/tf2_ros:geometry2/tf2_sensor_msgs:geometry2/tf2_tools:iai_kinect2/iai_kinect2:iai_kinect2/kinect2_bridge:iai_kinect2/kinect2_calibration:iai_kinect2/kinect2_registration:iai_kinect2/kinect2_viewer:ira_laser_tools:pointcloud_to_laserscan:rplidar_ros-master:super_pkg:two_wheels_description
+-DCATKIN_DEVEL_PREFIX=/home/cob/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cob/catkin_ws/install -G Unix Makefiles

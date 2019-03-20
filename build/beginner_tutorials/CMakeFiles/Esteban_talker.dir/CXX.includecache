@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/esteban/catkin_ws/src/beginner_tutorials/src/Esteban_talker.cpp
+/home/cob/catkin_ws/src/beginner_tutorials/src/Esteban_talker.cpp
 ros/ros.h
-/home/esteban/catkin_ws/src/beginner_tutorials/src/ros/ros.h
+/home/cob/catkin_ws/src/beginner_tutorials/src/ros/ros.h
 geometry_msgs/Twist.h
-/home/esteban/catkin_ws/src/beginner_tutorials/src/geometry_msgs/Twist.h
+/home/cob/catkin_ws/src/beginner_tutorials/src/geometry_msgs/Twist.h
 sstream
 -
 

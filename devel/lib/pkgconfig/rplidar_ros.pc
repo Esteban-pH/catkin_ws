@@ -1,8 +1,8 @@
-prefix=/home/esteban/catkin_ws/devel
+prefix=/home/cob/catkin_ws/devel
 
 Name: rplidar_ros
 Description: Description of rplidar_ros
 Version: 1.9.0
 Cflags: 
-Libs: -L/home/esteban/catkin_ws/devel/lib 
+Libs: -L/home/cob/catkin_ws/devel/lib 
 Requires: 
